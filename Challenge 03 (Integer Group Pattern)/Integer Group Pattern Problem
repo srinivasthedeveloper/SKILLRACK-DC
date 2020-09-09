@@ -1,0 +1,70 @@
+Integer Group Pattern
+
+The program must accept an integer N as the input. The program must print N lines, each containing the integers from 1 to N based on the following conditions.
+- In the 1st line, all N integers are enclosed within the parentheses.
+- In the 2nd line, every N-1 integers are enclosed within the parentheses.
+- In the 3rd line, every N-2 integers are enclosed within the parentheses.
+- In the 4th line, every N-3 integers are enclosed within the parentheses.
+- Similarly, the remaining lines are printed as the output.
+If the number of integers for the last set of a line is less, the remaining integers are enclosed within parentheses.
+
+Boundary Condition(s):
+2 <= N <= 100
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The first N lines, each containing the integers from 1 to N based on the given conditions.
+
+Example Input/Output 1:
+Input:
+5
+
+Output:
+(1 2 3 4 5)
+(1 2 3 4)(5)
+(1 2 3)(4 5)
+(1 2)(3 4)(5)
+(1)(2)(3)(4)(5)
+
+Explanation:
+Here N = 5, so the 5 integers are 1, 2, 3, 4 and 5.
+In the 1st line, all 5 integers are enclosed within the parentheses.
+(1 2 3 4 5)
+In the 2nd line, every 4 integers are enclosed within the parentheses.
+(1 2 3 4)(5)
+In the 3rd line, every 3 integers are enclosed within the parentheses.
+(1 2 3)(4 5)
+In the 4th line, every 4 integers are enclosed within the parentheses.
+(1 2)(3 4)(5)
+In the 5th line, every integer is enclosed within the parentheses.
+(1)(2)(3)(4)(5)
+
+Example Input/Output 2:
+Input:
+8
+
+Output:
+(1 2 3 4 5 6 7 8)
+(1 2 3 4 5 6 7)(8)
+(1 2 3 4 5 6)(7 8)
+(1 2 3 4 5)(6 7 8)
+(1 2 3 4)(5 6 7 8)
+(1 2 3)(4 5 6)(7 8)
+(1 2)(3 4)(5 6)(7 8)
+(1)(2)(3)(4)(5)(6)(7)(8)
+
+
+
+l=[str(i) for i in range(1,int(input())+1)]
+for i in range(len(l),0,-1):
+    if(i==len(l)):
+        print((" ".join(l)).join("()"))
+    elif(i>round(len(l)//2)):
+        print((" ".join(l[:i]).join("()"))+(" ".join(l[i:])).join("()"))
+    elif(i==1):
+        print(*[i.join('()') for i in l],sep="")
+    else:
+        t=[j for j in range(0,len(l),i)]
+        print("".join([ (" ".join(l[k:k+i]).join("()")) for k in t]))
