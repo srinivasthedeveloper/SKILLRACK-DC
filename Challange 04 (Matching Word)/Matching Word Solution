@@ -1,0 +1,14 @@
+p=input().strip()
+l=input().split()
+t=[]
+k=""
+for i in p:
+    if i.isalnum():
+        k+=i
+for i in l:
+    if(len(i)==len(p)):
+        t.append(i)
+for i in t:
+    if(list(k) in i):
+        print(i)
+        break
