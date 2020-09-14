@@ -1,0 +1,13 @@
+r,c=map(int,input().split())
+l=[]
+f=1
+for i in range(r):
+    l.append("".join(input().lower().split()))
+n=str(hex(int(input())))[2:]
+for i in l:
+    if(n in i):
+        f=0
+        print("YES")
+        break
+if(f):
+    print("NO")
