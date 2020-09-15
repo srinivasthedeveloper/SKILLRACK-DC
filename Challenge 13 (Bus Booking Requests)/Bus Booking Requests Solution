@@ -1,0 +1,8 @@
+b=int(input())
+d=int(input())
+l=[0]*b
+for _ in range(d):
+    x,y,s=map(int,input().split())
+    for i in range(x-1,y):
+        l[i]+=s
+print(*l)
