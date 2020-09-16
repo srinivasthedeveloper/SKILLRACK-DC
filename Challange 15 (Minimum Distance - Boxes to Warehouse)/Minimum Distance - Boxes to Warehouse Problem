@@ -1,0 +1,37 @@
+Minimum Distance - Boxes to Warehouse
+
+There are N boxes need to be stored in a warehouse. The distance between each box and the warehouse is passed as the input to the program. A boy can collect a maximum of two boxes at a time. The program must print the minimum distance the boy travel to store all N boxes in the warehouse as the output.
+Note: The boy always starts from the warehouse to store the boxes.
+
+Boundary Condition(s):
+1 <= N <= 100
+1 <= Distance between each box and the warehouse <= 10^5
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+
+Output Format:
+The first line contains an integer representing the minimum distance the boy travel to store all N boxes in the warehouse.
+
+Example Input/Output 1:
+Input:
+5
+7 3 8 5 11
+
+Output:
+42
+
+Explanation:
+The minimum distance the boy travel to store all N boxes in the warehouse is 42.
+One of the possible ways is given below.
+22(11 and 8) + 14(7 and 5) + 6(3) = 42.
+So 42 is printed as the output.
+
+Example Input/Output 2:
+Input:
+10
+18 32 30 17 24 33 37 20 19 16
+
+Output:
+258
