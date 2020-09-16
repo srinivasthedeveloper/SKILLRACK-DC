@@ -1,0 +1,7 @@
+s="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+n=int(input())
+t=""
+while(n):
+    t+=s[n%26]
+    n//=26
+print(t)
