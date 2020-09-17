@@ -1,0 +1,30 @@
+Substrings Count - No Vowels
+
+The program must accept a string S containing only alphabets as the input. The program must print the number of substrings not having the vowels and having the length greater than 1 in the string S as the output.
+
+Boundary Condition(s):
+2 <= Length of S <= 100
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains an integer representing the number of substrings not having the vowels and having the length greater than 1 in the string S.
+
+Example Input/Output 1:
+Input:
+Apple
+
+Output:
+3
+
+Explanation:
+In the string Apple, the substrings without vowels and having the length greater than 1 are pp, pl, ppl.
+Here the count is 3, which is printed as the output.
+
+Example Input/Output 2:
+Input:
+CLaSDEHJIKLoRT
+
+Output:
+5

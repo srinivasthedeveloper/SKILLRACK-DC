@@ -1,0 +1,16 @@
+s=input().lower().strip()
+count=0
+for indx1 in range(0,len(s)-1):
+    for indx2 in range(indx1+1,len(s)):
+        f=1
+        # f=[1 for k in s[indx1:indx2+1] if(k in"aeiou")]
+        # if(f):
+            # break
+
+        # else:
+        for i in s[indx1:indx2+1]:
+            if(i in "aeiou"):f=0;break
+        if(f):
+            c+=1
+            # f=0
+print(count)
