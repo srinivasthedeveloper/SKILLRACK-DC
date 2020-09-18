@@ -1,0 +1,48 @@
+Two Words - Next Word
+
+The program must accept two words (W1 and W2) and a string S containing multiple words as the input. The program must print the words that occur immediately after W1 and W2 in the string S. If there is no such word in S, then the program must print -1 as the output.
+
+Boundary Condition(s):
+1 <= Length of W1, W2 <= 50
+5 <= Length of S <= 1000
+
+Input Format:
+The first line contains W1.
+The second line contains W2.
+The third line contains S.
+
+Output Format:
+The first line contains the words that occur immediately after W1 and W2 in S or -1.
+
+Example Input/Output 1:
+Input:
+a
+Good
+Alice is a Good girl she is a Good student
+
+Output:
+girl student
+
+Explanation:
+Here W1 = a and W2 = Good.
+The words that occur immediately after W1 and W2 in the string S are girl and student.
+Hence the output is
+girl student
+
+Example Input/Output 2:   
+Input:
+louder
+speak
+Actions speak louder than words
+
+Output:
+-1
+
+Example Input/Output 3:
+Input:
+man
+has
+every man has his price
+
+Output:
+his

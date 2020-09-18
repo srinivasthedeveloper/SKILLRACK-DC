@@ -1,0 +1,11 @@
+w1=input().strip()
+w2=input().strip()
+word=w1+" "+w2
+string=input().split()
+wordNotFound=True
+for words in range(len(string)-1):
+    if(word==string[words]+" "+string[words+1]):
+        print(string[words+2],end=" ")
+        wordNotFound=False
+if(wordNotFound):
+    print(-1)
