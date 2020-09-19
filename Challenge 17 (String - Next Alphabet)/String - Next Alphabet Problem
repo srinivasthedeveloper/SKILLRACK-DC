@@ -1,0 +1,42 @@
+String - Next Alphabet
+
+The program must accept N integers and a string S as the input. For each integer X among the N integers, the program must replace the first X alphabets in the string S with their next alphabet in the English alphabet set. Finally, the program must print the modified string S as the output.
+Note: The English alphabet set is considered in a cyclic fashion for the next alphabet of a given alphabet.
+
+Boundary Condition(s):
+1 <= N <= 1000
+1 <= Each integer value <= Length of S <= 100
+
+Input Format:
+The first line contains N.
+The second line contains N integers separated by a space.
+The third line contains S.
+
+Output Format:
+The first line contains the modified string S.
+
+Example Input/Output 1:
+Input:
+4
+2 1 3 5
+abcde
+
+Output:
+eeeef
+
+Explanation:
+Here S = abcde.
+The 1st integer is 2, so the first 2 alphabets in the string abcde are replaced with their next alphabet b and c. Now the string becomes bccde.
+The 2nd integer is 1, so the first alphabet in the string bccde is replaced with its next alphabet c. Now the string becomes cccde.
+The 3rd integer is 3, so the first 3 alphabets in the string cccde are replaced with their next alphabet d, d and d. Now the string becomes dddde.
+The 4th integer is 5, so the first 5 alphabets in the string dddde are replaced with their next alphabets e, e, e, e and f. Now the string becomes eeeef.
+So eeeef is printed as the output.
+
+Example Input/Output 2:
+Input:
+3
+2 1 3
+ZEBRA
+
+Output:
+CGCRA

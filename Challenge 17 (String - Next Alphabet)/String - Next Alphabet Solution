@@ -1,0 +1,13 @@
+n=int(input())
+digits=list(map(int,input().split()))
+string=input().strip()
+for i in range(n):
+    # print(string[:digits[i]],string[digits[i]:])
+    t=""
+    for j in string[:digits[i]]:
+        if(j.islower()):
+            t+=chr(ord('a')+((ord(j)-ord('a')+1)%26))
+        else:
+            t+=chr(ord('A')+((ord(j)-ord('A')+1)%26))
+    string=t+string[digits[i]:]
+print(string)
