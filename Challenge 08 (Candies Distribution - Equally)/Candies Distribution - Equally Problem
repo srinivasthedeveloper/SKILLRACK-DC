@@ -1,0 +1,46 @@
+Candies Distribution - Equally
+
+A boy is having X candies, he likes to distribute all the candies equally to his N friends. None of his friends want to get the same type of candies. The program must accept a string S containing only alphabets, where each alphabet in the string S representing the types of the candies. The value of N is also passed as the input to the program. The program must print YES if the boy can distribute all the candies equally to his friends based on the above conditions. Else the program must print NO as the output.
+Note:
+- The length of the string S is always multiple of N.
+- The string S is case insensitive.
+
+Boundary Condition(s):
+1 <= Length of S <= 1000
+1 <= N <= 100
+
+Input Format:
+The first line contains S.
+The second line contains N.
+
+Output Format:
+The first line contains YES or NO.
+
+Example Input/Output 1:
+Input:
+Aacddb
+3
+
+Output:
+YES
+
+Explanation:
+Here the length of the string Aacddb is 6, so the boy is having 6 candies.
+Type a: 2 candies (case insensitive)
+Type c: 1 candy
+Type d: 2 candies
+Type b: 1 candy
+The value of N is 3, so the boy has 3 friends.
+One of the possible ways for the candies distribution is given below.
+Friend 1: ac
+Friend 2: Ad
+Friend 3: db
+So YES is printed as the output.
+
+Example Input/Output 2:
+Input:
+FgaGrgwrgrEg
+4
+
+Output:
+NO
