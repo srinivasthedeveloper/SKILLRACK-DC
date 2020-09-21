@@ -1,0 +1,46 @@
+Digit with Maximum Frequency
+
+The program must accept N digits as the input. The program must print the digit with the maximum frequency among the N digits as the output. If two or more digits have the same maximum frequency, the program must print the first repeating digit among those digits as the output.
+Note: At least one digit is always repeated among the N digits.
+
+Boundary Condition(s)
+2 <= N <= 1000
+
+Input Format:
+The first line contains N.
+The second line contains N digits separated by a space.
+
+Output Format:
+The first line contains a digit as per the given condition(s).
+
+Example Input/Output 1:
+Input:
+9
+1 2 3 4 4 4 5 1 4
+
+Output:
+4
+
+Explanation:
+The frequency of digit 1 is 2.
+The frequency of digit 2 is 1.
+The frequency of digit 3 is 1.
+The frequency of digit 4 is 4.
+The frequency of digit 5 is 1.
+The digit 4 has the maximum frequency, so 4 is printed as the output.
+
+Example Input/Output 2:
+Input:
+10
+1 2 1 2 5 2 1 6 5 6
+
+Output:
+1
+
+Explanation:
+The frequency of digit 1 is 3.
+The frequency of digit 2 is 3.
+The frequency of digit 5 is 2.
+The frequency of digit 6 is 2.
+The digits 1 and 2 have the same maximum frequency.
+The first repeating digit is 1. So 1 is printed as the output.
