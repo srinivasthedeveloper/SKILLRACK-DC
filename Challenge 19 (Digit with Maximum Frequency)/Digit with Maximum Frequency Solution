@@ -1,0 +1,16 @@
+n=int(input())
+l=list(map(int,input().split()))
+counts=[l.count(i) for i in set(l)]
+c=0
+t=0
+if(counts.count(max(counts))==1):
+    for i in l:
+        if(l.count(i)==max(counts)):
+            print(i)
+            break
+else:
+    distance={}
+    for i in set(l):
+        if(l.count(i)==max(counts)):
+            distance[i]=l.index(i,l.index(i)+1)-l.index(i)
+    print(sorted(distance.items(),key=lambda distance:distance[1])[0][1])
