@@ -1,0 +1,6 @@
+s1=input().strip()
+s2="".join(input().split(s1))
+for i in range(len(s2)):
+    if s1[i]!=s2[i]:
+        print(s1[i])
+        break

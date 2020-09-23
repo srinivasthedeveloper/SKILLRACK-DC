@@ -1,0 +1,35 @@
+Missing Character - Repeated String Values
+
+The program must accept two string values S1 and S2 as the input. The string S2 is formed by concatenating the string S1 repeatedly (possible once) but exactly only one character is missing in S2. The program must print the missing character in S2 as the output.
+
+Boundary Condition(s):
+2 <= Length of S1 <= 100
+1 <= Length of S2 <= 1000
+
+Input Format:
+The first line contains S1.
+The second line contains S2.
+
+Output Format:
+The first line contains the missing character in S2.
+
+Example Input/Output 1:
+Input:
+ant
+antantantanantantant
+
+Output:
+t
+
+Explanation:
+Here S1 = ant and S2 = antantantanantantant.
+The missing character in S2 is t.
+So t is printed as the output.
+
+Example Input/Output 2:
+Input:
+OrAclE
+OrAclEOrAclEOrAclEOrAclEOrclE
+
+Output:
+A
