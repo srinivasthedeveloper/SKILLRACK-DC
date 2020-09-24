@@ -1,0 +1,9 @@
+n=int(input())
+c=2
+for i in range(n):
+    if(i==n//2):
+        print("*"*n)
+    elif(i<n//2):
+        print('-'*((n-1)//2+i),end="*\n")
+    else:
+        print('-'*n-c,end="*\n")
