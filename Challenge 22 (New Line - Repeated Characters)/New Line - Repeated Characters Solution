@@ -1,0 +1,9 @@
+s=input().strip()
+r=""
+for i in s:
+    if(i in r):
+        print()
+        print(i,end="")
+    else:
+        print(i,end="")
+        r+=i
