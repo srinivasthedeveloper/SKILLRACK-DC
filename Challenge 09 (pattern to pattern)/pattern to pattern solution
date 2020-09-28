@@ -1,0 +1,5 @@
+s=input().split(':')
+for _ in s:
+    t=list(map(int,_.split('-')))
+    for i in range(len(t)-1):
+        print(*list(range(min([t[i],t[i+1]]),max([t[i],t[i+1]])+1)))
