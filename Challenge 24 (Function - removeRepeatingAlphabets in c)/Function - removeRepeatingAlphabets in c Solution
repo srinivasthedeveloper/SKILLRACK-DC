@@ -1,0 +1,21 @@
+#include <stdio.h>
+void removeRepeatingAlphabets (char str[])
+{
+    int si=0,cc=1;
+    for(int i=0;i<strlen(str);i++){
+        if(str[i]!=str[i+1]){
+            if(cc%2==1){
+                str[si++]=str[i];
+            }
+            cc=1;
+        }
+        else{
+            cc++;
+        }
+    str[si]='\0';
+    for(int i=0;i<strlen(str);i++){
+        if(str[i]==str[i+1]){
+            removeRepeatingAlphabets(str);
+        }
+    }
+}

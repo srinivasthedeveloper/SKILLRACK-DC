@@ -1,0 +1,38 @@
+Function - removeRepeatingAlphabets
+
+You must implement the function removeRepeatingAlphabets (char str[]) which accepts a string str as the input. The function must modify the string str by removing the alphabets which are recurring even number of times. The function must repeat the removing process until there are no more recurring alphabets in the string.
+
+Note: At least one alphabet will always remain in the string str after removing the recurring alphabets.
+
+IMPORTANT: Do not define the main() function as it is already defined. You just modify the string str as per the given condition. The modified string will be printed by the main() function.
+
+Boundary Condition(s):
+5 <= Length of S <= 1000
+
+Example Input/Output 1:
+Input:
+codeedelll
+
+Output:
+coel
+
+Explanation:
+Here the string str is "codeedelll".
+After removing the alphabets which are recurring even number of times in "codeedelll", it becomes "coddel".
+Still, the modified string contains the alphabets which are recurring even number of times. So those alphabets are removed in the string.
+Now the modified string "coel" has no more recurring alphabets.
+So coel is printed as the output.
+
+Example Input/Output 2:
+Input:
+xwxyyx
+
+Output:
+xw
+
+Example Input/Output 3:
+Input:
+Success
+
+Output:
+Sue
