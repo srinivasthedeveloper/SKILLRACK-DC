@@ -1,0 +1,13 @@
+n=int(input())
+r=(n-1)//2
+for i in range(r):
+    if(i==0):
+        print(('*'+('+'*((n-3)//2)))*2,end="*\n")
+        c=0
+        m=-1
+    elif(c*2+m&gt;=n):
+        print('#'*n)
+    else:
+        print('#'*c+'+'*((n-(c*2+m))//2)+'#'*m+'+'*((n-(c*2+m))//2)+'#'*c)
+    c+=1
+    m+=2
