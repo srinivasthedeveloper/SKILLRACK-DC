@@ -1,0 +1,31 @@
+Largest Integer - Sorted Digits
+
+The program must accept an integer N as the input. The program must print the largest integer which is less than or equal to N, where the digits are sorted in ascending order as the output.
+
+Boundary Condition(s):
+100 <= N <= 10^8
+
+Input Format:
+The first line contains N.
+
+Output Format:
+The first line contains an integer representing the largest integer with sorted digits.
+
+Example Input/Output 1:
+Input:
+322
+
+Output:
+299
+
+Explanation:
+Here N = 322.
+The largest integer is 299, which is less than or equal to 322 and also the digits in 299 are sorted in increasing order.
+So 299 is printed as the output.
+
+Example Input/Output 2:
+Input:
+1234
+
+Output:
+1234
