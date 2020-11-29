@@ -1,0 +1,33 @@
+Reverse String - Halves
+
+The program must accept a string S as the input. The program must reverse the first half of S and then reverse the second half of S. Then the program must reverse the first half and the second half in the first half of S. Then the program must reverse the first half and the second half in the second half of S. Finally, the program must print the modified string as the output.
+Note: If the length of the string is odd, keep the middle character in the same position and reverse the two halves.
+
+Boundary Condition(s):
+8 <= Length of S <= 100
+
+Input Format:
+The first line contains S.
+
+Output Format:
+The first line contains the modified string S.
+
+Example Input/Output 1:
+Input:
+argument
+
+Output:
+guarntme
+
+Explanation:
+After reversing the first half and the second half of the string argument, the string becomes ugratnem.
+After reversing the first half and the second half in the first half of the string ugratnem, the string becomes guartnem.
+After reversing the first half and the second half in the second half of the string guartnem, the string becomes guarntme.
+So guarntme is printed as the output.
+
+Example Input/Output 2:
+Input:
+SkillR@ck
+
+Output:
+ilSklckR@

@@ -1,0 +1,16 @@
+def reverse(lis):
+    if(len(lis)%2):
+        mid=len(lis)//2
+        lis=lis[:mid][::-1]+list(lis[mid])+lis[mid+1:][::-1]
+    else:
+        mid=len(lis)//2
+        lis=lis[:mid][::-1]+lis[mid:][::-1]
+    return lis
+s=list(input().strip())
+l=len(s)//2
+if(len(s)%2):
+    s=reverse(s[:l])+list(s[l])+reverse(s[l+1:])
+else:
+    s=reverse(s[:l])+revers(s[l:])
+s=reverse(s)
+print("".join(s))
