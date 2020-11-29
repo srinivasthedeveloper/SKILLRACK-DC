@@ -1,0 +1,15 @@
+n=int(input())
+l=list(map(int,input().split()))
+for i in l:
+    t=l[:]
+    s=0
+    t.remove(i)
+    if(i%2==0):
+        for j in t:
+            p=[int(k) for k in list(str(j)) if(int(k)%2==0)]
+            s+=sum(p)
+    else:
+        for j in t:
+            p=[int(k) for k in list(str(j)) if(int(k)%2)]
+            s+=sum(p)
+    print(s+i,end=" ")
